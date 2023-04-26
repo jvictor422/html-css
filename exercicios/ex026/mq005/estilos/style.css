@@ -65,8 +65,14 @@ main {
     margin-top: 10px;
 }
 
+article > h1 {
+    font-size: 2.5em;
+}
+
 article > h2 {
     padding-bottom: 20px;
+    padding-top: 15px;
+    font-size: 1em;
 }
 
 article > P {
@@ -74,4 +80,10 @@ article > P {
     margin-bottom: 20px;
     text-indent: 20px;
 
+}
+
+article > p > a {
+    text-decoration: none;
+    background-color: #364652;
+    color: white;
 }

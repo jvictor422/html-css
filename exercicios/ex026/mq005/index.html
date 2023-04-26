@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -16,23 +17,24 @@
             </span>
         <menu id="itens">
             <ul>
-                <li><a href="#">Opção 01</a></li>
-                <li><a href="#">Opção 01</a></li>
-                <li><a href="#">Opção 01</a></li>
-                <li><a href="#">Opção 01</a></li>
-                <li><a href="#">Opção 01</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Noticias internacionais</a></li>
+                <li><a href="#">Quem somos?</a></li>
+                <li><a href="#">Contato</a></li>
                 
             </ul>
         </menu>
     </header>
     <main>
         <article>
-            <h2>Testando Media Querries</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse ipsam saepe nisi sapiente reiciendis consequuntur quae quam, fuga, magnam placeat vero excepturi officiis fugiat cumque labore enim quidem delectus nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias debitis tempora porro voluptatibus rem! Incidunt, natus beatae? Facilis a eius itaque et minus. Dolores, odit voluptas soluta eligendi velit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, soluta nostrum! Temporibus, beatae! Reprehenderit distinctio eius dicta commodi atque quasi, ipsa at dolores possimus, delectus nemo, ipsam aliquam pariatur rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam excepturi deserunt illo. Rem esse eaque, nihil vero asperiores obcaecati, repellat impedit aliquid nesciunt explicabo, ipsam ipsa consectetur atque excepturi?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci nam expedita maiores error cumque tenetur voluptas, laborum, non obcaecati dolore nihil sit repudiandae quas cupiditate fuga, labore ipsam id laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolore placeat odit iure libero eum modi cum quos nobis tempore corporis minima quidem eius nostrum ipsa, nulla qui eos suscipit.<p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas facere eveniet aperiam illo quibusdam sint porro, alias deleniti, beatae hic, sit fugit debitis sapiente? Reiciendis dolorem minima a maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum molestiae dicta eaque quam reiciendis possimus amet perspiciatis atque consequuntur aperiam dolorem, optio laboriosam dignissimos eos officia corporis omnis veniam sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores labore facilis molestiae reprehenderit laboriosam fugiat iste, corporis nihil eveniet magni consequuntur fuga impedit cupiditate! Assumenda at eius vitae nesciunt totam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque in magnam! Sit ab atque cumque, dolores magni fugit ad impedit perferendis aperiam ipsam. Vero voluptate optio illum! Animi, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum, ab illo ullam corrupti quis voluptatibus labore assumenda, tenetur eius, aliquam excepturi? Eaque illum consectetur repellendus veritatis optio praesentium architecto.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptates praesentium excepturi voluptatibus, voluptatum ex, perferendis provident aperiam aut corporis doloribus iure? Rem ducimus labore vero neque recusandae est! Explicabo!</p>
+            <h1>Cuca nega que tenha pedido demissão do Corinthians: "Vou me preparar para quarta"</h1>
+            <h2>Treinador diz que foco está na partida contra o Remo, pela Copa do Brasil</h2>
+            <p>O técnico Cuca negou que tenha pedido para rescindir contrato com o Corinthians após a derrota por 3 a 1 para o Goiás, no último domingo, em Goiânia, em sua estreia no comando da equipe.</p>
+            <p>De acordo com o ex-jogador Vampeta, hoje comentarista da Rádio Jovem Pan, e a repórter Joanna de Assis, no Redação sportv, Cuca teria sugerido ao presidente do Corinthians, Duilio Monteiro Alves, desfazer o contrato assinado na última quinta. O vínculo tem duração até o fim da temporada.<p>
+            <p>– Não é verdade isso. Vou me preparar para quarta – disse o técnico ao <a href="https://ge.globo.com/" target="_blank">GE</a>, projetando o duelo contra o Remo, pela terceira fase da Copa do Brasil.</p>
+            <p>Além de parte da torcida, jogadoras do time feminino do Corinthians se posicionaram de forma contrária à contratação de Cuca. No último domingo, todas as atletas divulgaram uma mensagem que, entre outras coisas, dizia que o lema "Respeita as Minas" não é uma frase qualquer. [...]</p>
+            <p>Leia a Materia na integra <a href="https://ge.globo.com/futebol/times/corinthians/noticia/2023/04/24/cuca-nega-que-tenha-pedido-para-rescindir-com-o-corinthians-vou-me-preparar-para-quarta.ghtml" target="_blank">clicando aqui</a></p>
             
         </article>
     </main>
@@ -43,6 +45,14 @@
             } else {
                 itens.style.display = 'block'
             } 
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
         }
     </script>
 </body>
